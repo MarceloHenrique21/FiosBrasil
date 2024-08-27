@@ -1,12 +1,8 @@
-main {
-  background-color: black;
-}
-
+/* Estilos gerais */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
 }
 
 body {
@@ -14,7 +10,10 @@ body {
   margin: 0;
   padding: 0;
   background-color: whitesmoke;
+}
 
+main {
+  background-color: black;
 }
 
 .wrap {
@@ -28,8 +27,6 @@ nav {
   border-radius: 5px;
   box-shadow: 0 6px 16px #0d1e30;
 }
-
-
 
 nav container {
   display: flex;
@@ -77,7 +74,7 @@ nav container li a:hover {
   height: 6px;
   position: absolute;
   background: whitesmoke;
-  top: calc(100%/2.7);
+  top: calc(100% / 2.7);
   margin-left: 12px;
   border-radius: 2px;
 }
@@ -90,9 +87,7 @@ nav container li a:hover {
   color: whitesmoke;
   border: solid #f17b00 2px;
   background: #f17b00;
-  transition-property: color, background;
-  transition-duration: 0.15s;
-  transition-timing-function: ease-out;
+  transition: color 0.15s ease-out, background 0.15s ease-out;
   border-radius: 3px;
   cursor: pointer;
 }
@@ -110,18 +105,22 @@ nav container li a:hover {
   border-radius: 5px;
   min-height: 50vh;
   position: relative;
-  background: url('../img/1.jpg');
+  background-color: #F5F5F5;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-animation: fadeIn 2s ease-out;
-  -moz-animation: fadeIn 2s ease-in-out;
-  -o-animation: fadeIn 2s ease-in-out;
   animation: fadeIn 2s ease-in-out;
 }
 
-.hero a {
+.hero-image {
+  width: 70%;
+  height: auto;
+  max-width: none;
+  border-radius: 12px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
 
+.hero a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,9 +160,7 @@ nav container li a:hover {
   color: black;
   border: solid white 2px;
   background: white;
-  transition-property: color, background;
-  transition-duration: 0.15s;
-  transition-timing-function: ease-out;
+  transition: color 0.15s ease-out, background 0.15s ease-out;
   border-radius: 3px;
   cursor: pointer;
   margin-top: 24px;
@@ -174,12 +171,10 @@ nav container li a:hover {
 }
 
 .cordos {
-
   background-color: white;
   border-radius: 10px;
   max-width: 50%;
   filter: drop-shadow(0px 40px 52px rgba(0, 0, 0, 0.07));
-
 }
 
 .cordo {
@@ -187,7 +182,6 @@ nav container li a:hover {
   display: flex;
   background-image: url('');
   border-radius: 5px;
-
 }
 
 .cordo h2 {
@@ -199,12 +193,11 @@ nav container li a:hover {
   display: flex;
   font-size: 3.5rem;
   margin-bottom: 20px;
-  line-height: 50px;
+  line-height: 80px;
   max-width: 50%;
 }
 
 .cordo p {
-
   font-family: sans-serif;
   display: block;
   text-align: right;
@@ -218,13 +211,7 @@ nav container li a:hover {
   margin-top: 5%;
   display: flex;
   opacity: 0;
-  -webkit-animation: fadeIn 5s ease-in-out;
-  -moz-animation: fadeIn 5s ease-in-out;
-  -o-animation: fadeIn 5s ease-in-out;
   animation: fadeIn 5s ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  -o-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }
 
@@ -272,13 +259,21 @@ nav container li a:hover {
 
 .card {
   background: #fff;
-  color: hsl(233, 13%, 49%);
+  color: hsl(234, 28%, 42%);
   border-radius: 0.8rem;
   box-sizing: border-box;
   margin: 0 10px;
   flex: 0 0 auto;
   width: 280px;
   width: calc(80% / 3 - 20px);
+}
+
+.card:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.card:nth-child(even) {
+  background-color: #b4b4cc;
 }
 
 .card img {
@@ -359,6 +354,10 @@ nav container li a:hover {
   font-size: 1.2rem;
 }
 
+.tituloProdutos {
+  margin-bottom: 20px;
+}
+
 .txtProdutos {
   font-family: 'Montserrat', sans-serif;
   margin-top: 10%;
@@ -411,7 +410,6 @@ nav container li a:hover {
   border-bottom: 2px solid hsla(240, 8%, 85%, 0.253);
 }
 
-
 header {
   background: url(../img/aaa.jpg);
   height: 70vh;
@@ -450,7 +448,6 @@ header {
 }
 
 .atendm {
-
   color: #01091c;
   margin-top: 5%;
   margin-left: 25%;
@@ -489,7 +486,6 @@ header {
   background-color: #01091c;
   border-top: 1px solid #e5e5e5;
   margin-top: 150px;
-
 }
 
 .footer>* {
@@ -591,13 +587,11 @@ header {
 
 .legal p {
   margin-left: 38%;
-
 }
 
 .legal__links {
   display: flex;
   align-items: center;
-
 }
 
 @media screen and (min-width: 30em) {
@@ -622,14 +616,12 @@ header {
 
 .desenV {
   color: white;
-
 }
 
 .iconsSoci {
   margin-top: 5px;
   display: flex;
   position: absolute;
-
 }
 
 .iconInsta {
@@ -677,9 +669,6 @@ header {
 }
 
 .fadeIn {
-  -webkit-animation: fadeIn 3s ease-in-out;
-  -moz-animation: fadeIn 3s ease-in-out;
-  -o-animation: fadeIn 3s ease-in-out;
   animation: fadeIn 3s ease-in-out;
 }
 
@@ -703,4 +692,84 @@ header {
 
 #subirTopo:hover {
   opacity: 1;
+}
+
+/* Tablets e dispositivos pequenos */
+@media (max-width: 768px) {
+  nav container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav container ul,
+  nav container .nav_menu {
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .hero {
+    background-size: cover;
+  }
+
+  .cordos,
+  .cordo {
+    max-width: 90%;
+  }
+
+  .facilidade_container {
+    flex-direction: column;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .footer__nav {
+    flex-direction: column;
+  }
+
+  .footer__nav>* {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+}
+
+/* Smartphones e dispositivos muito pequenos */
+@media (max-width: 480px) {
+  .hero a {
+    width: 10%;
+  }
+
+  .hero--button {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .cordos,
+  .cordo {
+    max-width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    height: 2.2rem;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .footer__addr {
+    text-align: center;
+  }
+
+  .iconsSoci {
+    position: static;
+    margin: 0;
+  }
 }
